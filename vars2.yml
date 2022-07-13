@@ -1,0 +1,15 @@
+- hosts: web
+  tasks:
+    - name: "This task is going to create directory"
+      file:
+        path: "{{ mydir }}"
+        state: directory
+    - name: "This task is to coopy file"
+      copy:
+        src: "{{ myfile }}"
+        dest: "{{ mydir }}"
+    - name: "this task is to install package"
+      yum:
+         name: "{{ mypkg }}"
+         state: present
+

@@ -1,0 +1,7 @@
+mydir: /tmp/devops
+myfile: /etc/shadow
+mypkg: 
+  - httpd
+  - tree
+  - samba
+
