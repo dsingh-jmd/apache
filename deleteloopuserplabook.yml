@@ -1,0 +1,12 @@
+# delete user in loop
+- hosts: web
+  tasks: 
+    - user:
+        name: "{{ item }}"
+        state: absent  
+      with_items:
+        - deepak
+        - deepak1
+        - deepak2
+               
+

@@ -1,0 +1,6 @@
+- hosts: web
+  vars:
+    mydir: /tmp/cloudtech
+    myfile: /etc/passwd
+    mypkg: httpd
+

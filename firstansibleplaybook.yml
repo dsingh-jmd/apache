@@ -1,0 +1,5 @@
+--- # this is my first ansible playbook for single line formate
+- hosts: web
+  tasks:
+    - copy: src=/etc/group dest=/temp
+    - file: path=/tmp/aws state=directory

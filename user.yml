@@ -1,0 +1,6 @@
+# create user
+- hosts: web
+  tasks:
+   - user:
+      name: ansadmin
+      state: present

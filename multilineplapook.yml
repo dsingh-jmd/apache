@@ -1,0 +1,9 @@
+--- # this is first multipline playbook
+- hosts: web
+  tasks:
+      - copy: src=/etc/shadow
+              dest=/tmp
+      - file: path=/tmp/jenkins
+              state=directory
+      - yum:  name=nfs-utils
+              state=present

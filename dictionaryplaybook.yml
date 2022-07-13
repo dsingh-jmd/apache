@@ -1,0 +1,12 @@
+--- # first dictionary playbook
+- hosts: web 
+  tasks:
+      - copy:
+            src: /etc/group-
+            dest: /tmp
+      - file:
+            path: /tmp/jenkis2
+            state: directory
+      - yum: 
+           name: httpd
+           state: present

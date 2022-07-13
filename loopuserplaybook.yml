@@ -1,0 +1,10 @@
+# create user in loop playbook
+- hosts: web
+  tasks:
+    - user:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - deepak
+        - deepak1
+        - deepak2

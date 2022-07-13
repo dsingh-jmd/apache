@@ -1,0 +1,10 @@
+- hosts: web
+  tasks:
+   - file:
+        path: "{{ item }}"
+        state: absent
+     with_items:
+          - /tmp/group
+          - /tmp/shadow
+          - /tmp/gshadow
+          - /tmp/passwd
