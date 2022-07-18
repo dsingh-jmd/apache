@@ -1,0 +1,50 @@
+    1  cd
+    2  ls
+    3  whicch docker
+    4  which docker
+    5  cd /bin/docker
+    6  whereis docker
+    7  docker run -it --name c02 -h c02 --privileged=true --volumes-from c01 dsinghjmd/cgi:1.01 /bin/bash
+    8  cd dockerfile/
+    9  vi Dockerfile 
+   10  docker image build -t demoimg:latest
+   11  docker image build -t demoimg:latest .
+   12  docker images
+   13  docker image build -t demoimg:latest Dockerfile 
+   14  docker image build -t demoimg:latest ./Dockerfile 
+   15  docker image history 5f6c3aa5874b
+   16  docker run -it demoimg /bin/bash
+   17  docker image build -t demoimg:latest .
+   18  docker image
+   19  docker image ls
+   20  docker run -it demoimg /bin/bash
+   21  vi Dockerfile 
+   22  docker image build -t demoimg1:latest .
+   23  docker run -it demoimg1 /bin/bash
+   24  vi Dockerfile 
+   25  docker image build -t demoimg2:latest .
+   26  docker run -it demoimg2 /bin/bash
+   27  mkdir webserver
+   28  cd webserver/
+   29  vi Dockerfile
+   30  docker image buid webserver:1 .
+   31  docker image buid -t webserver:1 .
+   32* 
+   33* 
+   34  docker image buid -t webserver:1 .
+   35  docker image build -t webserver:1 .
+   36  vi Dockerfile 
+   37  docker image build -t webserver:1 .
+   38  vi Dockerfile
+   39  docker image build -t webserver:1 .
+   40  vi Dockerfile
+   41  docker image build -t webserver:1 .
+   42  vi Dockerfile
+   43  docker image build -t webserver:1 .
+   44  docker run -it --name webserver01 -h webserver01 -p 80:3600 webserver /bin/bash
+   45  docker images -a
+   46  docker run -it --name webserver01 -h webserver01 -p 80:3600 webserver:1 /bin/bash
+   47  docker run -it --name webserver01 -h webserver01 -p 3600:80 webserver:1 /bin/bash
+   48  docker run -it --name webserver02 -h webserver02 -p 3600:80 webserver:1 /bin/bash
+   49  history
+   50  history > history.text
