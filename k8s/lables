@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+   name: delhipod
+   labels: 
+      manager: rahul
+      dept: test
+spec:
+  containers:  
+    - name: c00
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo Welcome to Kubernetes; sleep 5 ; done"]
