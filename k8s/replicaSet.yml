@@ -1,0 +1,26 @@
+kind: ReplicaSet
+apiVersion: apps/v1
+metadata:
+    name: Cloudtech
+spec:
+   replicas: 3
+   selector:
+     matchExpression:
+       - key: team
+         operator: In
+         values:
+            - dev
+            - test
+            - prod
+   template:
+       metadata:
+          name: devPod
+          labels:
+            team: dev
+       spec:
+        containers:
+             - name: coo
+               image: nginx
+               #command: ["/bin/bash", "-c","while true; do echo deepak singh ; sleep 5; done"]
+               ports:
+                  - containerPOrt: 80              

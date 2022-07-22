@@ -1,0 +1,19 @@
+kind: Deploymnet
+apiVersion: apps/v1
+metadata:
+    name: mydeployments
+spec:
+    replicas: 1
+    selector:
+         matchLabels:
+              name: deployment    
+    template:       
+      metadata: 
+         name: testpod1   
+         labels:
+             name: deployment
+      spec:
+        containers:  
+        - name: c00
+          image: httpd
+          command: ["/bin/bash", "-c", "while true; do echo Welcome to Kubernetes; sleep 5 ; done"]  
