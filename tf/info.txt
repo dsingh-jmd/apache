@@ -1,0 +1,6 @@
+ami-08df646e18b182346  #Amazon AMI
+ami-05c8ca4485f8b138a # Redhat AMI
+ami-068257025f72f470d # Ubuntu AMI
+Subnet ID : subnet-0d47c7cc17ec8f644
+region: ap-south-1
+aws_secret_key: sZaWxUbBODB9YL6zUWLgy5tIUAzljo6lngaGhDbT
